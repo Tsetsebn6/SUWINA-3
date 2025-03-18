@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>untoldcoding</title>
     <link rel="stylesheet" href="Style3.css" />
+    <style>
+      button {
+        background-color: #ff4081; /* Ягаан өнгө */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background-color: #e91e63;
+        transform: scale(1.1);
+      }
+    </style>
   </head>
   <body>
     <div class="envelope">
@@ -18,7 +35,7 @@
             i can't express so i made <br />
             this for you
           </p>
-          <a href="new.html">Click here</a>
+          <button id="openPage">Click here</button>
         </div>
       </div>
       <div class="front"></div>
@@ -28,5 +45,11 @@
         <h2>Hey! I Have Something For You</h2>
       </div>
     </div>
+
+    <script>
+      document.getElementById("openPage").addEventListener("click", function() {
+        window.location.href = "new.html";
+      });
+    </script>
   </body>
 </html>
